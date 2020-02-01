@@ -1,1 +1,27 @@
-pk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fingerguess</title>
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body onload="go()">
+<div id="container">
+    <div id="mine">
+        <h1>我的出招</h1>
+        <input type="button" value="石头" onclick="rock()"/>
+        <input type="button" value="剪刀" onclick="scissors()"/>
+        <input type="button" value="布" onclick="paper()"/>
+        <div id="myChoice">
+
+        </div>
+    </div>
+    <div id="computer">
+        <h1 id="computerName">电脑大锤哥</h1>
+        <div id="computerChoice"></div>
+    </div>
+    <div id="result"></div>
+</div>
+</body>
+<script src="main.js"></script>
+<html>
